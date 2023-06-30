@@ -1,0 +1,71 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #4EC6EA;
+  }
+  
+  .title {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .therapist-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .therapist-list li {
+    margin-right: 60px;
+    cursor: pointer;
+  }
+  
+  .therapist-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .therapist-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0);
+    transition: 0.3s;
+  }
+  
+  .therapist-circle:hover .therapist-photo {
+    filter: blur(4px);
+  }
+  
+  .therapist-name {
+    font-size: 14px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .therapist-circle:hover .therapist-name {
+    opacity: 1;
+  }

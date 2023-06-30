@@ -1,0 +1,107 @@
+{
+    "therapists": [
+      {
+        "id": 1,
+        "name": "Dra. Marina Sena",
+        "photoUrl": "",
+        "position": "Clinical Psychologist",
+        "location": "New York",
+        "rating": 4.5,
+        "reviews": 4,
+        "pricePerMinute": 10,
+        "minutesIncluded": 60,
+        "availableDates": [
+          {
+            "date": "2023-07-01",
+            "hours": ["10:00 AM", "11:00 AM", "2:00 PM"]
+          },
+          {
+            "date": "2023-07-02",
+            "hours": ["9:00 AM", "12:00 PM", "3:00 PM"]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Dra. Larissa Machado",
+        "photoUrl": "",
+        "rating": 4.8,
+        "reviews": 8,
+        "pricePerMinute": 12,
+        "minutesIncluded": 50,
+        "availableDates": [
+          {
+            "date": "2023-07-01",
+            "hours": ["11:00 AM", "1:00 PM", "4:00 PM"]
+          },
+          {
+            "date": "2023-07-02",
+            "hours": ["10:00 AM", "12:00 PM", "3:00 PM"]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Dr. John Smith",
+        "photoUrl": "",
+        "position": "Psychiatrist",
+        "location": "Los Angeles",
+        "rating": 4.8,
+        "reviews": 8,
+        "pricePerMinute": 12,
+        "minutesIncluded": 50,
+        "availableDates": [
+          {
+            "date": "2023-07-01",
+            "hours": ["11:00 AM", "1:00 PM", "4:00 PM"]
+          },
+          {
+            "date": "2023-07-02",
+            "hours": ["10:00 AM", "12:00 PM", "3:00 PM"]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Dr. John Smith",
+        "photoUrl": "",
+        "position": "Psychiatrist",
+        "location": "Los Angeles",
+        "rating": 4.8,
+        "reviews": 8,
+        "pricePerMinute": 12,
+        "minutesIncluded": 50,
+        "availableDates": [
+          {
+            "date": "2023-07-01",
+            "hours": ["11:00 AM", "1:00 PM", "4:00 PM"]
+          },
+          {
+            "date": "2023-07-02",
+            "hours": ["10:00 AM", "12:00 PM", "3:00 PM"]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Dr. John Smith",
+        "photoUrl": "",
+        "position": "Psychiatrist",
+        "location": "Los Angeles",
+        "rating": 4.8,
+        "reviews": 8,
+        "pricePerMinute": 12,
+        "minutesIncluded": 50,
+        "availableDates": [
+          {
+            "date": "2023-07-01",
+            "hours": ["11:00 AM", "1:00 PM", "4:00 PM"]
+          },
+          {
+            "date": "2023-07-02",
+            "hours": ["10:00 AM", "12:00 PM", "3:00 PM"]
+          }
+        ]
+      }
+    ]
+  }
