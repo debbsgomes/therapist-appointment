@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -7,10 +6,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 
-export class MockDataService implements InMemoryDbService {
-  constructor(private http: HttpClient) {}
+export class MockDataService{
+   private apiUrl = '/db.json';
 
-  createDb(): Observable<any> {
-    return this.http.get('/db.json');
+   constructor(private http: HttpClient) {}
+
+  getDbData(): Observable<any> {
+    return this.http.get(this.apiUrl);
   }
 }

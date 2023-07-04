@@ -1,0 +1,32 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <img src="https://cdn4.iconfinder.com/data/icons/flat-pro-multimedia-set-1/32/btn-blue-shuffle-512.png" alt="Logo">
+  </div>
+  <div class="navbar-login">
+    <ng-container *ngIf="authenticationService.isLoggedIn; else loginForm">
+      <div class="welcome-message">
+        Welcome, {{ authenticationService.getLoggedInUser() }}
+      </div>
+      <button (click)="logout()">Logout</button>
+    </ng-container>
+    <ng-template #loginForm>
+      <form *ngIf="!showSignInForm" (ngSubmit)="login()">
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="email" autocomplete="email">
+        <input type="password" placeholder="Password" name="password" [(ngModel)]="password" autocomplete="current-password">
+        <button type="submit">Login</button>
+        <button (click)="showSignInForm = true">Sign In</button>
+      </form>
+      <div *ngIf="showSignInForm" class="modal">
+        <form (ngSubmit)="signIn()">
+          <input type="text" placeholder="Name" name="name" [(ngModel)]="signInData.name" required>
+          <input type="text" placeholder="Username" name="username" [(ngModel)]="signInData.username" required>
+          <input type="text" placeholder="Cellphone Number" name="cellphoneNumber" [(ngModel)]="signInData.cellphoneNumber" required mask="+99 (99) 99999-999" maskPlaceholder="_">
+          <input type="password" placeholder="Password" name="password" [(ngModel)]="signInData.password" required>
+          <input type="password" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="confirmPassword" required>
+          <button type="submit">Sign In</button>
+          <button (click)="cancelSignIn()">Cancel</button>
+        </form>
+      </div>
+    </ng-template>
+  </div>
+</nav>

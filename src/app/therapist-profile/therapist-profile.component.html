@@ -1,0 +1,22 @@
+<div class="psychologist-profile">
+    <div class="profile-details">
+      <div class="profile-picture">
+        <!--<img [src]="profilePicture" alt="Profile Picture">-->
+      </div>
+      <div class="profile-info">
+        <h2 class="name">{{ psychologist.name }}</h2>
+        <p class="position">{{ psychologist.position }}</p>
+        <p class="location">{{ psychologist.location }}</p>
+        <div class="review-system">
+          <span class="stars">{{ psychologist.rating }}</span>
+          <span class="review-count">({{ psychologist.reviewCount }} Reviews)</span>
+        </div>
+        <p class="price">Price per minute: {{ psychologist.pricePerMinute | currency }}</p>
+        <p class="minutes-included">Minutes included: {{ psychologist.minutesIncluded }}</p>
+      </div>
+    </div>
+    <div class="profile-test">
+      <h3>Testimonial</h3>
+      <!--<p class="testimonial-content">{{ testimonial }}</p>-->
+    </div>
+  </div>

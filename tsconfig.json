@@ -31,5 +31,6 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
     "preserveWhitespaces": true,
+    "esModuleInterop": true
   }
 }

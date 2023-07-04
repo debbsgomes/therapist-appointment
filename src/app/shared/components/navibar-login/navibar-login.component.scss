@@ -1,0 +1,63 @@
+.navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+
+.navbar-logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  max-width: 8%;
+  max-height: 50%;
+  margin-left: 50px;
+}
+
+.navbar-login {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-message {
+  margin-right: 40px;
+}
+
+.navbar-login form {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.navbar-login input {
+  margin-right: 10px;
+  padding: 7px;
+  font-size: 16px;
+  border: 1px solid Lightgray;
+  border-radius: 5px;
+}
+
+.navbar-login button {
+  background-color: #4EC6EA;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 6.5px 25px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  margin-left: 10px;
+}
+
+
+
+
+
+
