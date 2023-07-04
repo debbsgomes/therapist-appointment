@@ -9,7 +9,7 @@
         <p class="position">{{ therapist.position | uppercase}} | {{ therapist.location }}</p> 
       </div>
       <div class="review-system">
-        <ngx-stars [readonly]="true" [rate]="therapist.rating"></ngx-stars>
+        <app-rating [rating]="therapist.rating"></app-rating>
         <span class="review-count">({{ therapist.reviews }} Reviews)</span>
       </div>
       <p class="price">Price per minute: {{ therapist.pricePerSection | currency }}</p>

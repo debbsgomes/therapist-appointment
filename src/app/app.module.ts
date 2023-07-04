@@ -12,6 +12,7 @@ import { MockDataService } from './services/mock-data.service';
 import { TherapistProfileComponent } from './therapist-profile/therapist-profile.component';
 import { NavibarLoginComponent } from './shared/components/navibar-login/navibar-login.component';
 import { WebsiteFooterComponent } from './shared/components/website-footer/website-footer.component';
+import { RatingComponent } from './shared/components/rating/rating.component';
 
 
 
@@ -21,7 +22,8 @@ import { WebsiteFooterComponent } from './shared/components/website-footer/websi
     HomeComponent,
     TherapistProfileComponent,
     NavibarLoginComponent,
-    WebsiteFooterComponent
+    WebsiteFooterComponent,
+    RatingComponent
   ],
   imports: [
     AppRoutingModule,
@@ -29,7 +31,7 @@ import { WebsiteFooterComponent } from './shared/components/website-footer/websi
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxStarsModule
+    NgxStarsModule,
     
   ],
   providers: [MockDataService],

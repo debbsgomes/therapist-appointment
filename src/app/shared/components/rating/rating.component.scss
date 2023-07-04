@@ -1,0 +1,18 @@
+.star-rating {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fcd200; /* Set the color for filled stars */
+  }
+  
+  .star-rating .star {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.1em;
+    background-color: transparent; /* Set the color for empty stars */
+  }
+  
+  .star-rating .star.full {
+    background-color: #fcd200; /* Set the color for filled stars */
+  }
+  
