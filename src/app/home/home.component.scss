@@ -5,12 +5,16 @@
     justify-content: center;
     height: 100vh;
     padding: 20px;
-    background-color: #4EC6EA;
+    // background-color: #4EC6EA;
+    background-image: url('https://img.freepik.com/fotos-gratis/jovem-afro-americano-bonito-com-camiseta-caqui_176420-32042.jpg?w=1060&t=st=1688455516~exp=1688456116~hmac=1e3457882dc6cb28350e8559b11127ebbf7a3f68a66c4408d41c38509fb1f91c');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   
   .title {
     font-family: 'Libre Caslon Text', serif;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
   }
   

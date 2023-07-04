@@ -26,8 +26,6 @@ export class AuthenticationService {
     return {
       id: data.id,
       name: data.name,
-      username: data.username,
-      cellphoneNumber: data.cellphoneNumber,
       email: data.email,
       password: data.password
     };

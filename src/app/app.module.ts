@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -11,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { MockDataService } from './services/mock-data.service';
 import { TherapistProfileComponent } from './therapist-profile/therapist-profile.component';
 import { NavibarLoginComponent } from './shared/components/navibar-login/navibar-login.component';
+import { WebsiteFooterComponent } from './shared/components/website-footer/website-footer.component';
 
 
 
@@ -19,13 +19,15 @@ import { NavibarLoginComponent } from './shared/components/navibar-login/navibar
     AppComponent,
     HomeComponent,
     TherapistProfileComponent,
-    NavibarLoginComponent
+    NavibarLoginComponent,
+    WebsiteFooterComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]

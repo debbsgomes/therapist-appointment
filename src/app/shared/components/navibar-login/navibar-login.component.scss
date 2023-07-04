@@ -4,28 +4,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px;
-}
-
-.navbar-logo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo img {
-  max-width: 8%;
-  max-height: 50%;
-  margin-left: 50px;
+  padding: 15px;
+  position: relative;
 }
 
 .navbar-login {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .welcome-message {
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .navbar-login form {
@@ -53,11 +43,126 @@
   font-family: "Arial", sans-serif;
   font-weight: bold;
   font-size: large;
-  margin-left: 10px;
 }
 
+.modal-overlay {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+.modal-content {
+  width: 100%;
+  max-width: 500px;
+  max-height: 400px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.disabled {
+  pointer-events: none;
+}
+
+.form-group {
+  display:flex;
+  align-items:center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  flex: 1;
+  font-size: 20px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.form-group input {
+  flex: 2;
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.modal label {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.modal input {
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1px;
+  font-size: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #2980b9;
+}
+
+.button-group button:first-child {
+  margin-right: 1rem;
+}
+
+button[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+button[disabled].sign-in-button {
+  background-color: grey;
+}
+
+button[disabled].cancel-button {
+  background-color: grey;
+}
 
 
 
