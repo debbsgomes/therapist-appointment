@@ -3,13 +3,22 @@
     {
       "id": 1,
       "name": "Dra. Marina Sena",
-      "photoUrl": "",
-      "position": "Clinical Psychologist",
+      "photoUrl": "https://img.freepik.com/fotos-gratis/retrato-de-mulher-branca-sorrindo_53876-146505.jpg?w=900&t=st=1688496774~exp=1688497374~hmac=84f6d9260435ded9b1beb5631ae57312a5090d1078b50044f854e04a709aa20b",
+      "position": "Psychologist",
       "location": "New York",
       "rating": 4.5,
-      "reviews": 4,
-      "pricePerMinute": 10,
+      "reviews": 20,
+      "pricePerSection": 100,
       "minutesIncluded": 60,
+      "description": "Dr. Marina Sena is a highly skilled and experienced psychologist based in New York. With a strong passion for helping others, she provides professional and compassionate counseling services to individuals seeking mental and emotional support. Driven by her expertise and dedication, she offers a safe and nurturing environment for her clients to explore their thoughts, feelings, and concerns.",
+      "userReviews": [
+        {
+          "review1": "Dr. Marina Sena has been a lifesaver for me. Her compassionate and insightful approach helped me navigate through some of the most challenging times in my life. I feel heard and understood in her sessions, and her guidance has made a tremendous impact on my overall well-being. - Sarah",
+          "review2": "I cannot recommend Dr. Sena enough. Her expertise and professionalism are unparalleled. She creates a safe and non-judgmental space where I feel comfortable sharing my deepest fears and concerns. Her guidance has helped me gain a better understanding of myself and develop effective coping strategies. - Michael",
+          "review3": "I am grateful to have found Dr. Marina Sena. Her expertise in psychology and genuine care for her clients shine through in every session. She actively listens, provides valuable insights, and challenges me to grow. Her approach is tailored to my specific needs, and I have seen significant improvements in my mental well-being under her guidance. - Emily",
+          "review4": "Dr. Sena is an exceptional psychologist. Her professionalism and warmth create a supportive environment where I feel safe to open up. She has helped me gain a deeper understanding of my emotions and provided me with practical tools to manage stress and anxiety. I highly recommend her services to anyone seeking professional counseling. - David",
+          "review5": "Choosing Dr. Marina Sena as my therapist was one of the best decisions I have made for my mental health. Her knowledge, empathy, and ability to create a trusting therapeutic relationship have been invaluable to my growth and healing. I feel empowered and supported in her sessions, and I can see the positive changes in my life as a result of her guidance. - Jennifer"        }
+      ],
       "availableDates": [
         {
           "date": "2023-07-01",
@@ -32,11 +41,22 @@
     {
       "id": 2,
       "name": "Dra. Larissa Machado",
-      "photoUrl": "",
-      "rating": 4.8,
-      "reviews": 8,
-      "pricePerMinute": 12,
+      "photoUrl": "https://img.freepik.com/fotos-gratis/mulher-jovem-e-bonita-em-sueter-rosa-quente-aparencia-natural-sorridente-retrato-ligado-isolado-cabelo-comprido_285396-896.jpg?w=1060&t=st=1688495811~exp=1688496411~hmac=cfaf3499ab6cc01d1dbad7cd271b77a416de6d99b1b4516eb93dc38f0a5b9a4e",
+      "position": "Psychologist",
+      "location": "Newark",
+      "rating": 4,
+      "reviews": 7,
+      "pricePerSection": 150,
       "minutesIncluded": 50,
+      "description": "Dra. Larissa Machado expertise lies in areas such as anxiety, depression, stress management, self-esteem issues, and relationship difficulties. She believes in a personalized approach to therapy, tailoring her methods to suit the unique needs and goals of each client. By utilizing evidence-based techniques and drawing from a range of therapeutic modalities, she assists her clients in gaining deeper insights, developing coping strategies, and achieving personal growth.",
+      "userReviews": [
+        {
+          "review1": "I cannot recommend Dra. Machado enough. Her compassionate approach and deep understanding helped me navigate through my anxiety and self-esteem issues. She provided practical tools and guidance that have made a significant difference in my life. I am grateful for her expertise and highly recommend her services. - Sarah",
+          "review2": "Dra. Machado is a skilled and attentive psychologist. Her ability to create a safe space allowed me to open up and explore my emotions freely. With her guidance, I gained valuable insights into my patterns of thinking and behavior, and I feel more empowered to make positive changes. I am thankful for her support throughout my therapeutic journey. - John",
+          "review3": "Finding Dra. Larissa Machado was a turning point for me. Her compassionate and non-judgmental approach made me feel comfortable from the very beginning. She helped me develop effective strategies to manage my stress and improve my overall well-being. I highly recommend her to anyone seeking a knowledgeable and caring psychologist. - Maria",
+          "review4": "I had the privilege of working with Dra. Machado during a challenging time in my life. Her expertise and genuine concern for my well-being were evident in every session. She provided a safe and supportive environment for me to explore my emotions and work through my issues. I am grateful for her guidance and highly recommend her services. - David",
+          "review5": "Dra. Larissa Machado is an exceptional psychologist. Her empathy and understanding created a strong therapeutic bond, and I felt truly heard and validated. She helped me gain clarity and provided practical tools to manage my anxiety. I appreciate her professionalism and highly recommend her to anyone seeking professional support. - Jessica"        }
+      ],
       "availableDates": [
         {
           "date": "2023-07-01",
@@ -59,13 +79,22 @@
     {
       "id": 3,
       "name": "Dr. John Smith",
-      "photoUrl": "",
+      "photoUrl": "https://img.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg?w=900&t=st=1688496185~exp=1688496785~hmac=2d4ce50c7c20f4d5db8447bb088de2faf8b1a62c92e2d5462897a217f485053e",
       "position": "Psychiatrist",
-      "location": "Los Angeles",
-      "rating": 4.8,
-      "reviews": 8,
-      "pricePerMinute": 12,
-      "minutesIncluded": 50,
+      "location": "Brooklyn",
+      "rating": 4.7,
+      "reviews": 15,
+      "pricePerSection": 200,
+      "minutesIncluded": 30,
+      "description": "Dr. John Smith is a highly skilled and experienced psychiatrist based in Brooklyn. With a compassionate and patient-centered approach, he is dedicated to providing comprehensive mental health care to his clients. Dr. Smith specializes in the diagnosis, treatment, and management of mental illnesses, including anxiety disorders, depression, bipolar disorder, schizophrenia, and other psychiatric conditions. Clients appreciate his warm and empathetic demeanor, as he creates a safe and supportive environment for open communication. Dr. Smith collaborates with clients to develop personalized treatment plans and emphasizes holistic well-being, incorporating therapy and counseling alongside medication management. With a commitment to ongoing education and a multidisciplinary approach, Dr. John Smith is a trusted professional in the mental health community.",
+      "userReviews": [
+        {
+          "review1": "Dr. John Smith is an exceptional psychiatrist. He's highly knowledgeable, and his expertise in mental health is evident. His compassionate approach and genuine interest in my well-being have made a significant impact on my life. I highly recommend him for anyone seeking top-notch psychiatric care. - Hasan",
+          "review2": "Dr. Smith is the bomb! He's got this incredible ability to understand what you're going through and offers practical solutions. He's like a mind-reader, but with a prescription pad! If you need a psychiatrist who knows their stuff and genuinely cares, Dr. Smith is your guy. - Brad",
+          "review3": "I can't say enough good things about Dr. John. He's a top-notch shrink who knows how to make you feel comfortable. He's got this cool vibe and an awesome taste in music. Therapy sessions never felt this cool before! - Rosalia",
+          "review4": "Dr. Smith is a lifesaver! He's helped me navigate some rough patches with his expertise and guidance. He's got this warm and welcoming demeanor that instantly puts you at ease. Plus, he's always up for a good laugh, which makes therapy sessions a lot less intimidating. - Leonardo",
+          "review5": "Dr. John Smith is the real deal! He's been my go-to psychiatrist for a while now, and he's been instrumental in helping me overcome my mental health challenges. He's professional, yet down-to-earth, and has a knack for explaining things in a way that makes sense. Can't recommend him enough! - Denzel"        }
+      ],
       "availableDates": [
         {
           "date": "2023-07-01",
@@ -87,14 +116,23 @@
     },
     {
       "id": 4,
-      "name": "Dr. John Smith",
-      "photoUrl": "",
-      "position": "Psychiatrist",
+      "name": "Dr. Amelia Parker",
+      "photoUrl": "https://img.freepik.com/psd-premium/conceito-do-retrato-dos-povos-do-tiro-do-estudio_53876-22461.jpg?w=996",
+      "position": "Voice Therapist",
       "location": "Los Angeles",
       "rating": 4.8,
       "reviews": 8,
-      "pricePerMinute": 12,
+      "pricePerSection": 100,
       "minutesIncluded": 50,
+      "description": "Dr. Amelia Parker is an esteemed voice therapist based in Los Angeles. With her passion for vocal health and extensive experience, she has earned a solid reputation in her field. Dr. Parker possesses a deep understanding of the intricacies of the human voice and is dedicated to helping individuals unlock their true vocal potential. Whether you're a professional singer, actor, or someone seeking to improve their voice, Dr. Parker's expertise and personalized approach ensure that each session is tailored to your unique needs. Her warm and empathetic demeanor creates a comfortable space for clients to explore and overcome vocal challenges. Dr. Parker's commitment to excellence and her ability to foster positive change have garnered high praise from her clients. With a remarkable rating of 4.8 and numerous positive reviews, Dr. Amelia Parker is the go-to voice therapist for anyone looking to enhance their vocal abilities and express themselves with confidence.",
+      "userReviews": [
+        {
+          "review1": "Dr. Amelia Parker is an absolute genius in the realm of voice therapy! Her expertise and passion for helping people find their voice are truly remarkable. I had struggled with vocal issues for years, but thanks to Dr. Parker's guidance and tailored exercises, I've made significant progress in a short period. She's a game-changer! - Bruno",
+          "review2": "OMG, Dr. Amelia Parker is a total lifesaver! I had some serious vocal problems, and she came to the rescue like a superhero. Her sessions are fun and engaging, and she really knows how to make you feel comfortable. Thanks to her, I'm sounding better than ever. Highly recommend! - Alexander",
+          "review3": "I can't say enough good things about Dr. Amelia Parker. She's not just a voice therapist; she's a voice magician! Her sessions are like a mix of therapy and vocal boot camp. She pushes you to your limits, but in the most supportive way possible. Trust me, she'll take your voice to places you never thought possible. - Mauricio",
+          "review4": "Dr. Amelia Parker is a true expert in her field. She's helped me overcome my vocal challenges with ease and grace. Her personalized approach and attention to detail are unmatched. If you're serious about improving your voice, she's the one to go to. Simply the best! - Dayenne",
+          "review5": "Dr. Amelia Parker is a rockstar! She's got the skills, the knowledge, and the personality. I had a blast working with her. She's not your typical stuffy therapist; she's cool, down-to-earth, and knows how to make you feel at ease. I've learned so much from her, and my voice has never been happier! - Chloe"        }
+      ],
       "availableDates": [
         {
           "date": "2023-07-01",
@@ -116,14 +154,23 @@
     },
     {
       "id": 5,
-      "name": "Dr. John Smith",
-      "photoUrl": "",
-      "position": "Psychiatrist",
-      "location": "Los Angeles",
-      "rating": 4.8,
-      "reviews": 8,
-      "pricePerMinute": 12,
-      "minutesIncluded": 50,
+      "name": "Dr. Mauricio Jackson",
+      "photoUrl": "https://img.freepik.com/fotos-gratis/jovem-homem-posando-isolado-contra-a-parede-em-branco-do-estudio_273609-12356.jpg?w=1060&t=st=1688497181~exp=1688497781~hmac=77a43c0b31eaa77ceb94070fcbb5445b5695295b8816c467053511ad75c09910",
+      "position": "Nutritionist",
+      "location": "Miami",
+      "rating": 4.5,
+      "reviews": 25,
+      "pricePerSection": 120,
+      "minutesIncluded": 40,
+      "description": "Dr. Mauricio Jackson is a highly skilled and experienced nutritionist based in Miami. With a passion for promoting health and well-being through proper nutrition, Dr. Jackson is dedicated to helping individuals achieve their wellness goals. His extensive knowledge in the field of nutrition, coupled with his compassionate and patient-centered approach, allows him to create personalized and sustainable dietary plans tailored to each client's unique needs. Whether you're looking to manage a specific medical condition, optimize your athletic performance, or simply improve your overall health, Dr. Jackson provides expert guidance and support every step of the way. With a strong track record of success and a reputation for delivering exceptional results, Dr. Mauricio Jackson is a trusted professional who is committed to empowering individuals to make positive and lasting changes to their nutritional habits.",
+      "userReviews": [
+        {
+          "review1": "I had the pleasure of working with Dr. Mauricio Jackson for my nutrition needs, and I can confidently say that he is an exceptional nutritionist. His in-depth knowledge and expertise in the field are evident in his approach. He took the time to understand my goals and provided me with a customized meal plan that not only helped me achieve my desired weight but also improved my overall health. Dr. Jackson's professionalism, attentiveness, and genuine care for his clients make him stand out in the field. I highly recommend him to anyone seeking expert guidance in nutrition. - Jennifer",
+          "review2": "Dr. M is the real deal when it comes to nutrition! He knows his stuff and keeps it real. He helped me ditch those unhealthy eating habits and guided me towards a healthier lifestyle. His tips and tricks are practical and easy to follow. Plus, he's got a great sense of humor, which makes every session enjoyable. Highly recommend giving him a shout if you want to level up your nutrition game! - George",
+          "review3": "I cannot thank Dr. Mauricio Jackson enough for the positive impact he has had on my health and well-being. His comprehensive approach to nutrition has completely transformed my life. Not only did he provide me with a well-rounded and personalized meal plan, but he also educated me on the importance of balanced eating and mindful choices. Dr. Jackson's expertise, professionalism, and genuine passion for his work make him a standout nutritionist. If you're ready to take charge of your health, I highly recommend seeking his guidance. - Mark",
+          "review4": "Dr. M is a game-changer! He helped me crack the code to a healthier lifestyle without sacrificing my love for food. His practical tips and meal ideas are on point. I mean, who knew healthy eating could be so delicious? Plus, he's always there to answer my random nutrition questions, and he never makes me feel dumb for asking. Dr. Jackson rocks! - Curtis",
+          "review5": "Dr. Mauricio Jackson is an outstanding nutritionist who truly cares about his clients' well-being. From the moment I started working with him, I knew I was in good hands. He listened attentively to my concerns, conducted a thorough assessment, and developed a tailored nutrition plan that suited my lifestyle and goals. Dr. Jackson's ability to simplify complex nutritional concepts and his unwavering support throughout my journey have been invaluable. I highly recommend him to anyone seeking expert guidance and personalized nutrition strategies. - Daniel"        }
+      ],
       "availableDates": [
         {
           "date": "2023-07-01",
@@ -162,6 +209,12 @@
       "name": "Thiago Oliveira",
       "email": "thiagooliveira87@gmail.com",
       "password": "vasco"
+    },
+    {
+      "id": "c744a0b2-e1a0-43b4-81bc-6aa4f8f41464",
+      "name": "Rosangela Gomes",
+      "email": "rosinha403-nit@gmail.com",
+      "password": "rosinha123"
     }
   ]
 }

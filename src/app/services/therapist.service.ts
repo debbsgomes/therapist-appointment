@@ -19,6 +19,13 @@ export class TherapistService {
     );
   }
 
+  getTherapistById(id: string): Observable<Therapist | undefined> {
+    const therapistURL = `${this.therapistsURL}/${id}`;
+    return this.http.get<any>(therapistURL).pipe(
+      map(data => this.mapToTherapist(data))
+    );
+  }
+
   private mapToTherapist(data: any): Therapist {
     return {
       id: data.id,
@@ -28,8 +35,10 @@ export class TherapistService {
       location: data.location,
       rating: data.rating,
       reviews: data.reviews,
-      pricePerMinute: data.pricePerMinute,
-      minutesIncluded: data.minutesIncluded
+      pricePerSection: data.pricePerSection,
+      minutesIncluded: data.minutesIncluded,
+      description: data.description,
+      userReviews: data.userReviews
     };
   }
 }

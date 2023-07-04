@@ -1,12 +1,11 @@
-
 <div class="home-container">
   <h2 class="title">Choose one of our professionals</h2>
   <ul class="therapist-list">
     <li *ngFor="let therapist of therapists">
-      <div class="therapist-circle">
+      <div class="therapist-circle" [class.clickable]="isLoggedIn()" (click)="selectTherapist(therapist)">
         <div class="circle-content">
           <img [src]="therapist.photoUrl" alt="Therapist Photo" class="therapist-photo" />
-          <span class="therapist-name">{{ therapist.name }}</span>
+          <span class="therapist-name">{{ therapist.name }} - {{ therapist.position}}</span>
         </div>
       </div>
     </li>

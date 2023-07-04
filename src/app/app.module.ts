@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxStarsModule } from 'ngx-stars';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,6 +29,8 @@ import { WebsiteFooterComponent } from './shared/components/website-footer/websi
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxStarsModule
+    
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]

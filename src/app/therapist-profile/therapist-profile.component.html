@@ -1,22 +1,23 @@
-<div class="psychologist-profile">
-    <div class="profile-details">
-      <div class="profile-picture">
-        <!--<img [src]="profilePicture" alt="Profile Picture">-->
-      </div>
-      <div class="profile-info">
-        <h2 class="name">{{ psychologist.name }}</h2>
-        <p class="position">{{ psychologist.position }}</p>
-        <p class="location">{{ psychologist.location }}</p>
-        <div class="review-system">
-          <span class="stars">{{ psychologist.rating }}</span>
-          <span class="review-count">({{ psychologist.reviewCount }} Reviews)</span>
-        </div>
-        <p class="price">Price per minute: {{ psychologist.pricePerMinute | currency }}</p>
-        <p class="minutes-included">Minutes included: {{ psychologist.minutesIncluded }}</p>
-      </div>
+<div class="therapist-profile">
+  <div class="profile-details" *ngFor="let therapist of therapists">
+    <div class="profile-picture">
+      <img class="circle-profile-picture" [src]="therapist.photoUrl" alt="Profile Picture">
     </div>
-    <div class="profile-test">
-      <h3>Testimonial</h3>
-      <!--<p class="testimonial-content">{{ testimonial }}</p>-->
+    <div class="profile-info">
+      <div class="name-container">
+        <h2 class="name">{{ therapist.name }}</h2>
+        <p class="position">{{ therapist.position | uppercase}} | {{ therapist.location }}</p> 
+      </div>
+      <div class="review-system">
+        <ngx-stars [readonly]="true" [rate]="therapist.rating"></ngx-stars>
+        <span class="review-count">({{ therapist.reviews }} Reviews)</span>
+      </div>
+      <p class="price">Price per minute: {{ therapist.pricePerSection | currency }}</p>
+      <p class="minutes-included">Minutes included: {{ therapist.minutesIncluded }}</p>
     </div>
   </div>
+  <div class="profile-test">
+    <h3>Reviews</h3>
+    <!--<p class="testimonial-content">{{ testimonial }}</p>-->
+  </div>
+</div>

@@ -42,13 +42,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: default;
+  }
+
+  .clickable {
+    cursor: pointer;
   }
   
   .circle-content {
-    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     transition: 0.3s;
   }
   
@@ -58,16 +65,25 @@
     object-fit: cover;
     filter: blur(0);
     transition: 0.3s;
+    border-radius: 50%;
   }
   
   .therapist-circle:hover .therapist-photo {
-    filter: blur(4px);
+    filter: blur(20px);
   }
   
   .therapist-name {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
     opacity: 0;
     transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    width: 80%;
   }
   
   .therapist-circle:hover .therapist-name {

@@ -6,6 +6,8 @@ export interface Therapist {
   location: string;
   rating: number;
   reviews: number;
-  pricePerMinute: number;
+  pricePerSection: number;
   minutesIncluded: number;
+  description: string; 
+  userReviews: string;
   }

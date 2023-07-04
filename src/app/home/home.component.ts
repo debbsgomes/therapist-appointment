@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private therapistService: TherapistService,
-    @Inject(Router) private router: Router,
+    private router: Router,
     private authenticationService: AuthenticationService,
     private mockDataService: MockDataService
     ) {}
@@ -46,12 +46,19 @@ export class HomeComponent implements OnInit {
         error => console.log(error)
       );
     }
-  
-    selectTherapist(therapist: Therapist): void {
-      this.router.navigate(['/therapists', therapist.id]);
-    }
 
     isLoggedIn(): boolean {
       return this.authenticationService.isLoggedIn;
     }
+  
+    selectTherapist(therapist: Therapist): void {
+      if (this.authenticationService.isLoggedIn) {
+        this.router.navigate(['/therapist-profile', therapist.id]);
+      } else {
+        // Handle when user is not logged in
+        console.log("Please log in to view therapist profile.");
+      }
+    }
+
+    
 }

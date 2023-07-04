@@ -1,0 +1,49 @@
+.profile-details {
+    display: flex;
+    align-items: center;
+  }
+
+.profile-picture {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+  
+.circle-profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 20px;
+  }
+  
+.name-container {
+    display: flex;
+    margin-top: 155px;
+    flex-direction: column;
+}
+  
+  .name {
+    margin-right: 10px;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    font-size:larger;
+    color: #696969;
+    margin-bottom: 7px;
+    
+  }
+
+  .position {
+    margin-top: 5px;
+    color: #0096FF;
+    font-size: 14px; 
+    font-weight: bolder;
+    margin-right: 5px;
+    margin-bottom: 4px;
+  }
+

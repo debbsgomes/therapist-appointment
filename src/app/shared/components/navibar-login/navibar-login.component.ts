@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { User } from 'src/app/user.model';
@@ -14,7 +13,6 @@ import { v4 as uuidv4} from 'uuid';
 export class NavibarLoginComponent {
   email: string = '';
   password: string = '';
-  isLoggedIn: boolean = false;
   loggedInUser: string = '';
   signInData: User = {
     id: uuidv4(),
@@ -38,11 +36,9 @@ export class NavibarLoginComponent {
   login() {
     this.authenticationService.login(this.email, this.password).subscribe(result => {
       if (result) {
-        this.isLoggedIn = true;
         this.loggedInUser = this.authenticationService.getLoggedInUser();
         this.showMessage = true;
       } else {
-        this.isLoggedIn = false;
         this.loggedInUser = '';
       }
     });
@@ -50,7 +46,6 @@ export class NavibarLoginComponent {
 
   logout() {
     this.authenticationService.logout();
-    this.isLoggedIn = false;
     this.loggedInUser = '';
 
   }
