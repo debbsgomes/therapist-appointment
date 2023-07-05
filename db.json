@@ -11,23 +11,13 @@
       "pricePerSection": 100,
       "minutesIncluded": 60,
       "description": "Dr. Marina Sena is a highly skilled and experienced psychologist based in New York. With a strong passion for helping others, she provides professional and compassionate counseling services to individuals seeking mental and emotional support. Driven by her expertise and dedication, she offers a safe and nurturing environment for her clients to explore their thoughts, feelings, and concerns.",
-      "availableDates": [
-        {
-          "date": "2023-07-01",
-          "hours": [
-            "10:00 AM",
-            "11:00 AM",
-            "2:00 PM"
-          ]
-        },
-        {
-          "date": "2023-07-02",
-          "hours": [
-            "9:00 AM",
-            "12:00 PM",
-            "3:00 PM"
-          ]
-        }
+      "availableHours": [
+        "10:00 AM",
+        "11:00 AM",
+        "2:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "5:00 PM"
       ]
     },
     {
@@ -41,24 +31,13 @@
       "pricePerSection": 150,
       "minutesIncluded": 50,
       "description": "Dra. Larissa Machado expertise lies in areas such as anxiety, depression, stress management, self-esteem issues, and relationship difficulties. She believes in a personalized approach to therapy, tailoring her methods to suit the unique needs and goals of each client. By utilizing evidence-based techniques and drawing from a range of therapeutic modalities, she assists her clients in gaining deeper insights, developing coping strategies, and achieving personal growth.",
-      
-      "availableDates": [
-        {
-          "date": "2023-07-01",
-          "hours": [
-            "11:00 AM",
-            "1:00 PM",
-            "4:00 PM"
-          ]
-        },
-        {
-          "date": "2023-07-02",
-          "hours": [
-            "10:00 AM",
-            "12:00 PM",
-            "3:00 PM"
-          ]
-        }
+      "availableHours": [
+        "10:00 AM",
+        "11:00 AM",
+        "2:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "5:00 PM"
       ]
     },
     {
@@ -72,24 +51,13 @@
       "pricePerSection": 200,
       "minutesIncluded": 30,
       "description": "Dr. John Smith is a highly skilled and experienced psychiatrist based in Brooklyn. With a compassionate and patient-centered approach, he is dedicated to providing comprehensive mental health care to his clients. Dr. Smith specializes in the diagnosis, treatment, and management of mental illnesses, including anxiety disorders, depression, bipolar disorder, schizophrenia, and other psychiatric conditions. Clients appreciate his warm and empathetic demeanor, as he creates a safe and supportive environment for open communication. Dr. Smith collaborates with clients to develop personalized treatment plans and emphasizes holistic well-being, incorporating therapy and counseling alongside medication management. With a commitment to ongoing education and a multidisciplinary approach, Dr. John Smith is a trusted professional in the mental health community.",
-      
-      "availableDates": [
-        {
-          "date": "2023-07-01",
-          "hours": [
-            "11:00 AM",
-            "1:00 PM",
-            "4:00 PM"
-          ]
-        },
-        {
-          "date": "2023-07-02",
-          "hours": [
-            "10:00 AM",
-            "12:00 PM",
-            "3:00 PM"
-          ]
-        }
+      "availableHours": [
+        "10:00 AM",
+        "11:00 AM",
+        "2:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "5:00 PM"
       ]
     },
     {
@@ -103,24 +71,13 @@
       "pricePerSection": 100,
       "minutesIncluded": 50,
       "description": "Dr. Amelia Parker is an esteemed voice therapist based in Los Angeles. With her passion for vocal health and extensive experience, she has earned a solid reputation in her field. Dr. Parker possesses a deep understanding of the intricacies of the human voice and is dedicated to helping individuals unlock their true vocal potential. Whether you're a professional singer, actor, or someone seeking to improve their voice, Dr. Parker's expertise and personalized approach ensure that each session is tailored to your unique needs. Her warm and empathetic demeanor creates a comfortable space for clients to explore and overcome vocal challenges. Dr. Parker's commitment to excellence and her ability to foster positive change have garnered high praise from her clients. With a remarkable rating of 4.8 and numerous positive reviews, Dr. Amelia Parker is the go-to voice therapist for anyone looking to enhance their vocal abilities and express themselves with confidence.",
-      
-      "availableDates": [
-        {
-          "date": "2023-07-01",
-          "hours": [
-            "11:00 AM",
-            "1:00 PM",
-            "4:00 PM"
-          ]
-        },
-        {
-          "date": "2023-07-02",
-          "hours": [
-            "10:00 AM",
-            "12:00 PM",
-            "3:00 PM"
-          ]
-        }
+      "availableHours": [
+        "10:00 AM",
+        "11:00 AM",
+        "2:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "5:00 PM"
       ]
     },
     {
@@ -134,24 +91,13 @@
       "pricePerSection": 120,
       "minutesIncluded": 40,
       "description": "Dr. Mauricio Jackson is a highly skilled and experienced nutritionist based in Miami. With a passion for promoting health and well-being through proper nutrition, Dr. Jackson is dedicated to helping individuals achieve their wellness goals. His extensive knowledge in the field of nutrition, coupled with his compassionate and patient-centered approach, allows him to create personalized and sustainable dietary plans tailored to each client's unique needs. Whether you're looking to manage a specific medical condition, optimize your athletic performance, or simply improve your overall health, Dr. Jackson provides expert guidance and support every step of the way. With a strong track record of success and a reputation for delivering exceptional results, Dr. Mauricio Jackson is a trusted professional who is committed to empowering individuals to make positive and lasting changes to their nutritional habits.",
-      
-      "availableDates": [
-        {
-          "date": "2023-07-01",
-          "hours": [
-            "11:00 AM",
-            "1:00 PM",
-            "4:00 PM"
-          ]
-        },
-        {
-          "date": "2023-07-02",
-          "hours": [
-            "10:00 AM",
-            "12:00 PM",
-            "3:00 PM"
-          ]
-        }
+      "availableHours": [
+        "10:00 AM",
+        "11:00 AM",
+        "2:00 PM",
+        "3:00 PM",
+        "4:00 PM",
+        "5:00 PM"
       ]
     }
   ],
@@ -179,6 +125,12 @@
       "name": "Rosangela Gomes",
       "email": "rosinha403-nit@gmail.com",
       "password": "rosinha123"
+    },
+    {
+      "id": "d42cfd83-e0b2-4835-8aa0-8020b5e49dbb",
+      "name": "Joaozinho",
+      "email": "joao@gmail.com",
+      "password": "12345678"
     }
   ]
 }

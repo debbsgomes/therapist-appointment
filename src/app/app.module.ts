@@ -20,6 +20,7 @@ import { NavibarLoginComponent } from './shared/components/navibar-login/navibar
 import { WebsiteFooterComponent } from './shared/components/website-footer/website-footer.component';
 import { RatingComponent } from './shared/components/rating/rating.component';
 import { DatePickerComponent } from './shared/components/date-picker/date-picker.component';
+// import { AppointmentFormComponent } from './appointment-form/appointment-form.component';
 
 
 
@@ -31,7 +32,8 @@ import { DatePickerComponent } from './shared/components/date-picker/date-picker
     NavibarLoginComponent,
     WebsiteFooterComponent,
     RatingComponent,
-    DatePickerComponent
+    DatePickerComponent,
+    // AppointmentFormComponent
   ],
   imports: [
     AppRoutingModule,

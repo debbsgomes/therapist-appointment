@@ -9,4 +9,5 @@ export interface Therapist {
   pricePerSection: number;
   minutesIncluded: number;
   description: string; 
+  availableHours: string[];
   }

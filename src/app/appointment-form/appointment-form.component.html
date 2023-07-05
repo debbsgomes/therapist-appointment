@@ -1,0 +1,47 @@
+<!-- <h2>Schedule an appointment</h2>
+
+<form (ngSubmit)="submitForm()">
+    <div>
+        <label for="hour">Hour:</label>
+        <select id="hour" [(ngModel)]="selectedHour">
+          <option *ngFor="let hour of availableHours" [value]="hour">{{ hour }}</option>
+        </select>
+      </div>
+
+  <div>
+    <label for="consultationFor">Who is the consultation for?</label>
+    <input id="consultationFor" type="text" [(ngModel)]="consultationFor" required>
+  </div>
+
+  <div>
+    <h3>Personal information</h3>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" type="text" [(ngModel)]="name" required>
+    </div>
+    <div>
+      <label for="surname">Surname:</label>
+      <input id="surname" type="text" [(ngModel)]="surname" required>
+    </div>
+    <div>
+      <label for="phoneNumber">Phone number:</label>
+      <div class="phone-input">
+        <select id="countryCode" [(ngModel)]="countryCode">
+          <option value="12">12</option>
+        </select>
+        <input id="phoneNumber" type="text" [(ngModel)]="phoneNumber" required>
+      </div>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" type="email" [(ngModel)]="email" required>
+    </div>
+  </div>
+
+  <div>
+    <h3>Additional information for the doctor</h3>
+    <textarea [(ngModel)]="additionalInfo" rows="4" cols="50"></textarea>
+  </div>
+
+  <button type="submit" [disabled]="isSubmitted">Submit</button>
+</form> -->

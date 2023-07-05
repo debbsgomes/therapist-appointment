@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { formatDate } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-date-picker',
@@ -7,20 +8,24 @@ import { formatDate } from '@angular/common';
   styleUrls: ['./date-picker.component.scss'],
 })
 export class DatePickerComponent {
-  selected: Date | null = null;
   currentDate: Date = new Date();
   calendarDays: (number | null)[][] = [];
   displayMonth: string = '';
+  selectedDay: number | null = null;
 
-  constructor() {
+  constructor(private router: Router) {
     this.generateCalendarDays();
     this.updateDisplayMonth();
-  }
+    this.setDisplayMonth();
+    }
 
   changeMonth(direction: number): void {
+    // Update the month based on the direction
     const currentMonth = this.currentDate.getMonth();
     const newMonth = currentMonth + direction;
     this.currentDate.setMonth(newMonth);
+
+    // Regenerate the calendar days and update the display month
     this.generateCalendarDays();
     this.updateDisplayMonth();
   }
@@ -60,5 +65,33 @@ export class DatePickerComponent {
 
   private updateDisplayMonth(): void {
     this.displayMonth = formatDate(this.currentDate, 'MMMM yyyy', 'en-US');
+  }
+
+  isClickable(day: number | null): boolean {
+    return day !== null && day !== 0 && day !== 7; // Exclude Sundays (day 0) from being clickable
+  }
+
+  isSelected(day: number | null): boolean {
+    return day === this.selectedDay;
+  }
+
+  selectDay(day: number | null): void {
+    if (this.isClickable(day)) {
+      this.selectedDay = day;
+      this.highlightSelectedDay();
+      this.router.navigate(['/appointment', day]);
+    }
+  }
+
+  private highlightSelectedDay(): void {
+    const selectedCell = document.querySelector(`.mat-calendar-body-cell[data-day="${this.selectedDay}"]`);
+    if (selectedCell) {
+      selectedCell.classList.add('selected-cell');
+    }
+  }
+
+  private setDisplayMonth(): void {
+    const options: Intl.DateTimeFormatOptions = { month: 'long', year: 'numeric' };
+    this.displayMonth = this.currentDate.toLocaleDateString('en-US', options);
   }
 }

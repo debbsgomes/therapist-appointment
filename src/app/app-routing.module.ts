@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'therapist-profile/:id', component: TherapistProfileComponent},
+  // { path: 'appointment/:day', component: AppointmentFormComponent},
 ];
 
 @NgModule({

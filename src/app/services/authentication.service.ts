@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { User } from '../user.model';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,9 @@ export class AuthenticationService {
 
   private usersURL = 'http://localhost:3000/users';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router)  {
+    this.checkLoggedInStatus();
+  }
 
   getUsers(): Observable<User[]> {
     return this.http.get<any[]>(this.usersURL).pipe(
@@ -43,6 +46,7 @@ export class AuthenticationService {
         if (user) {
           this.isLoggedIn = true;
           this.loggedInUser = user.name;
+          this.saveLoggedInStatus();
           return true;
         }
         return false;
@@ -53,7 +57,29 @@ export class AuthenticationService {
     logout(): void {
       this.isLoggedIn = false;
       this.loggedInUser = '';
+      this.removeLoggedInStatus();
+      this.router.navigate(['/']);
     }
+
+    private checkLoggedInStatus(): void {
+      const loggedInStatus = localStorage.getItem('isLoggedIn');
+      const loggedInUser = localStorage.getItem('loggedInUser');
+      if (loggedInStatus && loggedInUser) {
+        this.isLoggedIn = JSON.parse(loggedInStatus);
+        this.loggedInUser = JSON.parse(loggedInUser);
+      }
+    }
+
+    private saveLoggedInStatus(): void {
+      localStorage.setItem('isLoggedIn', JSON.stringify(this.isLoggedIn));
+      localStorage.setItem('loggedInUser', JSON.stringify(this.loggedInUser));
+    }
+  
+    private removeLoggedInStatus(): void {
+      localStorage.removeItem('isLoggedIn');
+      localStorage.removeItem('loggedInUser');
+    }
+  
 
     getLoggedInUser(): string {
       return this.isLoggedIn ? this.loggedInUser : '';
