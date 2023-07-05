@@ -1,0 +1,65 @@
+.demo-inline-calendar-card {
+    width: 250px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.custom-calendar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+  .mat-calendar-header {
+    background-color: #318CE7;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    .mat-calendar-prev-button,
+    .mat-calendar-next-button {
+        font-size: 16px;
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+   .mat-calendar-header-label {
+        margin: 10px 10px;;
+        color: #fff;
+    }
+  }
+
+  .mat-calendar-table {
+    flex: 1;
+    margin-top: 5px;
+  }
+
+  .mat-calendar-table-header {
+    font-weight: bold;
+  }
+
+  .mat-calendar-body-cell {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    font-weight:bolder;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}

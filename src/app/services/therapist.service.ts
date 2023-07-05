@@ -37,8 +37,7 @@ export class TherapistService {
       reviews: data.reviews,
       pricePerSection: data.pricePerSection,
       minutesIncluded: data.minutesIncluded,
-      description: data.description,
-      userReviews: data.userReviews
+      description: data.description
     };
   }
 }

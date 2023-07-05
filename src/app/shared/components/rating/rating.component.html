@@ -1,6 +1,4 @@
-<div class="star-rating">
-    <ng-container *ngFor="let star of fullStars; index as i">
-      <div class="star full"></div>
-    </ng-container>
-    <div class="star" *ngIf="hasHalfStar"></div>
-  </div>
+<div class="rating-stars">
+  <span class="star" *ngFor="let star of fullStars">&#9733;</span>
+  <span class="star" *ngIf="hasHalfStar">&#9734;</span>
+</div>

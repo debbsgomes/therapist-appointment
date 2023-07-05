@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-therapist-profile',
   templateUrl: './therapist-profile.component.html',
-  styleUrls: ['./therapist-profile.component.scss']
+  styleUrls: ['./therapist-profile.component.scss'],
+  
 })
 export class TherapistProfileComponent {
   therapists: Therapist[] = [];

@@ -1,0 +1,36 @@
+<mat-card class="demo-inline-calendar-card">
+    <div class="custom-calendar">
+      <div class="mat-calendar-header">
+        <button mat-button class="mat-calendar-prev-button" (click)="changeMonth(-1)">
+          Back
+        </button>
+        <span class="mat-calendar-header-label">{{ displayMonth }}</span>
+        <button mat-button class="mat-calendar-next-button" (click)="changeMonth(1)">
+          Next
+        </button>
+      </div>
+  
+      <table class="mat-calendar-table">
+        <thead>
+          <tr>
+            <th class="mat-calendar-table-header">Sun</th>
+            <th class="mat-calendar-table-header">Mon</th>
+            <th class="mat-calendar-table-header">Tue</th>
+            <th class="mat-calendar-table-header">Wed</th>
+            <th class="mat-calendar-table-header">Thu</th>
+            <th class="mat-calendar-table-header">Fri</th>
+            <th class="mat-calendar-table-header">Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let week of calendarDays">
+            <tr>
+              <ng-container *ngFor="let day of week">
+                <td class="mat-calendar-body-cell" [class.empty]="!day">{{ day }}</td>
+              </ng-container>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </mat-card>

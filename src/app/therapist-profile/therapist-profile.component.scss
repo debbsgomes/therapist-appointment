@@ -1,14 +1,36 @@
+.page-background {
+  background-image: url('https://img.freepik.com/fotos-gratis/retrato-de-uma-jovem-feliz-rindo-segurando-a-mao-no-queixo-expressa-emocoes-positivas-sorri-amplamente-tem-uma-expressao-despreocupada-usa-um-macacao-laranja-isolado-sobre-a-parede-azul_273609-44638.jpg?w=1060&t=st=1688550353~exp=1688550953~hmac=ac460ff376f0a09a97a12058ae9964d0e0f86dddb8340c8ae482096971607937');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+}
+
+.therapist-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 20px;
+  width: calc(100% - 300px);
+  margin-right: 20px
+  
+}
+
+
 .profile-details {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
   }
 
 .profile-picture {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin-left: 100px;
-    margin-top: 150px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: 60px;
+  margin-top: 100px;
   }
   
 .circle-profile-picture {
@@ -18,33 +40,104 @@
     border-radius: 50%;
 }
 
-.profile-info {
-    margin-left: 20px;
-  }
+// .profile-info {
+//     margin-left: 20px;
+//   }
   
-.name-container {
-    display: flex;
-    margin-top: 155px;
-    flex-direction: column;
-    padding: 1px;
-}
+// .name-container {
+//     display: flex;
+//     margin-top: 10px;
+//     align-items: center;
+//     padding: 20px;
+// }
   
   .name {
     margin-right: 10px;
     font-family: 'Libre Caslon Text', serif;
     font-family: 'Mulish', sans-serif;
-    font-size:larger;
+    font-size:18px;
     color: #696969;
     margin-bottom: 7px;
+    margin-top: 150px;
+    margin-left: 20px;
     
   }
 
-  .position {
+  .info-container {
     margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .position {
+    // margin-top: 5px;
     color: #0096FF;
     font-size: 14px; 
     font-weight: bolder;
-    margin-right: 5px;
-    margin-bottom: 4px;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    // margin-right: 5px;
+    // margin-bottom: 4px;
   }
 
+  .location {
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    color: grey
+  }
+
+  .review-system {
+    margin-top: 1px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .review-count {
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    color: grey;
+    font-weight: bolder;
+  }
+
+  .price-container {
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+
+  .price {
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    color: #565656;
+  }
+
+  .minutes-included {
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    font-weight: bolder;
+    color: #878787;
+    font-size: 15px;
+  }
+
+  .minibio {
+    margin-top: 10px;
+    margin-left: 30px;
+    position: absolute;
+    top: 380px;
+    left: 50px;
+    width:500px;
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Mulish', sans-serif;
+    color:black;
+    font-weight: 1000;
+  }
+
+  .date-picker-container {
+    position: absolute;
+    top: 220px;
+    right: 80px;
+  }

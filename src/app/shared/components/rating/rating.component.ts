@@ -16,7 +16,8 @@ export class RatingComponent {
   }
 
   get fullStars(): number[] {
-    return Array(Math.floor(this.rating)).fill(0);
+    const roundedRating = Math.floor(this.rating);
+    return Array(roundedRating).fill(0);
   }
 
   get hasHalfStar(): boolean {

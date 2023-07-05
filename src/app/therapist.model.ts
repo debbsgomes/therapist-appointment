@@ -9,5 +9,4 @@ export interface Therapist {
   pricePerSection: number;
   minutesIncluded: number;
   description: string; 
-  userReviews: string;
   }
