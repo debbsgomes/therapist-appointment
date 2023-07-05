@@ -1,8 +1,10 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxStarsModule } from 'ngx-stars';
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -28,11 +30,11 @@ import { RatingComponent } from './shared/components/rating/rating.component';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     NgxStarsModule,
-    
+    CommonModule,
+    FormsModule
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]
