@@ -32,7 +32,7 @@ describe('TherapistService', () => {
       {
         id: 1,
         name: 'John',
-        photoUrl: 'http://example.com/johndoe.jpg',
+        photoUrl: 'http://example.com/john.jpg',
         position: 'Psychologist',
         location: 'New York',
         rating: 4.5,
@@ -56,8 +56,8 @@ describe('TherapistService', () => {
   it('should retrieve therapist by ID', () => {
     const mockTherapist: Therapist = {
       id: 1,
-      name: 'John Doe',
-      photoUrl: 'http://example.com/johndoe.jpg',
+      name: 'John',
+      photoUrl: 'http://example.com/john.jpg',
       position: 'Psychologist',
       location: 'New York',
       rating: 4.5,
