@@ -48,7 +48,7 @@ src/app/viewmodels: Contains the view models used to separate the presentation l
 
 ## External dependencies
 
-Be sure to have those libraries and frameworks installed to be able to run the project:
+Be sure to have those libraries and frameworks installed to be able to run the project: 
 
 Angular Material: Install by running this command `ng add @angular/material`. It was used to build the date picker/calendar.
 Jest: Install by running `npm install --save-dev jest` and this `npm install jest-localstorage-mock --save-dev`. It was used to do the unit tests instead of Karma.
