@@ -15,6 +15,7 @@ After you get into the doctor profile you will have their bio and a calendar to 
 
 ## Project Structure
 
+
 ├───app
 │   ├───appointment-form
 │   ├───home
@@ -27,6 +28,7 @@ After you get into the doctor profile you will have their bio and a calendar to 
 │   │       └───website-footer
 │   └───therapist-profile
 └───assets
+
 
 src/app/components: Contains the application components.
 src/app/services: Contains the services used to interact with the API and manipulate the data.
