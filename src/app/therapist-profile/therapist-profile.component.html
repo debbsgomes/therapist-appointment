@@ -1,44 +1,41 @@
 <div class="page-background">
+  <div class="therapist-profile" *ngFor="let therapist of therapists">
+    <div class="profile-details">
+      <div class="profile-picture">
+        <img
+          class="circle-profile-picture"
+          [src]="therapist.photoUrl"
+          alt="Profile Picture"
+        />
+      </div>
+      <div>
+        <h2 class="name">{{ therapist.name }}</h2>
 
-    <div class="therapist-profile" *ngFor="let therapist of therapists">
-      <div class="profile-details">
-        <div class="profile-picture">
-          <img
-            class="circle-profile-picture"
-            [src]="therapist.photoUrl"
-            alt="Profile Picture"
-          />
+        <div class="info-container">
+          <span class="position">{{ therapist.position | uppercase }}</span>
+          <span class="location">| {{ therapist.location }}</span>
         </div>
-        <div>
-          <h2 class="name">{{ therapist.name }}</h2>
+        <div class="review-system">
+          <span class="stars-rating"
+            ><app-rating [rating]="therapist.rating"></app-rating
+          ></span>
+          <span class="review-count"> ({{ therapist.reviews }} Reviews)</span>
+        </div>
+        <div class="price-container">
+          <span class="price">${{ therapist.pricePerSection }}</span>
+          <span class="minutes-included">
+            / {{ therapist.minutesIncluded }} minutes</span
+          >
+        </div>
 
-          <div class="info-container">
-            <span class="position">{{ therapist.position | uppercase }}</span>
-            <span class="location">| {{ therapist.location }}</span>
-          </div>
-          <div class="review-system">
-            <span class="stars-rating"
-              ><app-rating [rating]="therapist.rating"></app-rating
-            ></span>
-            <span class="review-count"> ({{ therapist.reviews }} Reviews)</span>
-          </div>
-          <div class="price-container">
-            <span class="price">${{ therapist.pricePerSection }}</span>
-            <span class="minutes-included">
-              / {{ therapist.minutesIncluded }} minutes</span
-            >
-          </div>
+        <div class="minibio">
+          <p>{{ therapist.description }}</p>
+        </div>
 
-          <div class="minibio">
-            <p>{{ therapist.description }}</p>
-          </div>
-
-          <div class="date-picker-container">
-            <app-date-picker></app-date-picker>
-          </div>
+        <div class="date-picker-container">
+          <app-date-picker></app-date-picker>
         </div>
       </div>
     </div>
-
-
+  </div>
 </div>

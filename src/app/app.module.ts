@@ -2,7 +2,6 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxStarsModule } from 'ngx-stars';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -11,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { NgxStarsModule } from 'ngx-stars';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,8 +21,6 @@ import { WebsiteFooterComponent } from './shared/components/website-footer/websi
 import { RatingComponent } from './shared/components/rating/rating.component';
 import { DatePickerComponent } from './shared/components/date-picker/date-picker.component';
 // import { AppointmentFormComponent } from './appointment-form/appointment-form.component';
-
-
 
 @NgModule({
   declarations: [
@@ -46,9 +44,9 @@ import { DatePickerComponent } from './shared/components/date-picker/date-picker
     MatDatepickerModule,
     MatNativeDateModule,
     MatCardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [MockDataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

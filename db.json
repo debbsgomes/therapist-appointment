@@ -103,12 +103,6 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "Deborah Gomes",
-      "email": "debbsgomes@gmail.com",
-      "password": "12345678"
-    },
-    {
       "id": "a673e700-a39f-43a2-bc1e-ee1ab2d178ae",
       "name": "Nathalia Gomes",
       "email": "natizinha_sb@hotmail.com",
@@ -130,6 +124,24 @@
       "id": "d42cfd83-e0b2-4835-8aa0-8020b5e49dbb",
       "name": "Joaozinho",
       "email": "joao@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "b6413cc4-c0b5-43d0-9e3b-c88d16981e67",
+      "name": "Deborah Gomes",
+      "email": "debbsgomes@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "c6514c56-598e-4b87-98cb-13edfd701a04",
+      "name": "Pedro de Alcântara Francisco Antônio João Carlos Xavier de Paula Miguel Rafael Joaquim José Gonzaga Pascoal Cipriano Serafim de Bragança e Bourbon",
+      "email": "pedrinho@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "d6710df1-d209-4dc9-b550-98a517b44181",
+      "name": "user",
+      "email": "user@gmail.com",
       "password": "12345678"
     }
   ]

@@ -17,15 +17,13 @@ export class DatePickerComponent {
     this.generateCalendarDays();
     this.updateDisplayMonth();
     this.setDisplayMonth();
-    }
+  }
 
   changeMonth(direction: number): void {
-    // Update the month based on the direction
     const currentMonth = this.currentDate.getMonth();
     const newMonth = currentMonth + direction;
     this.currentDate.setMonth(newMonth);
 
-    // Regenerate the calendar days and update the display month
     this.generateCalendarDays();
     this.updateDisplayMonth();
   }
@@ -40,19 +38,16 @@ export class DatePickerComponent {
     let week: (number | null)[] = Array(7).fill(null);
     let dayCount = 1;
 
-    // Fill in empty cells for the first week
     for (let i = 0; i < firstDay.getDay(); i++) {
       week[i] = null;
     }
 
-    // Populate calendar days
     for (let i = firstDay.getDay(); i < 7; i++) {
       week[i] = dayCount;
       dayCount++;
     }
     this.calendarDays.push(week);
 
-    // Populate the rest of the calendar days
     while (dayCount <= lastDay.getDate()) {
       week = Array(7).fill(null);
       for (let i = 0; i < 7 && dayCount <= lastDay.getDate(); i++) {
@@ -68,7 +63,7 @@ export class DatePickerComponent {
   }
 
   isClickable(day: number | null): boolean {
-    return day !== null && day !== 0 && day !== 7; // Exclude Sundays (day 0) from being clickable
+    return day !== null && day !== 0 && day !== 7;
   }
 
   isSelected(day: number | null): boolean {
@@ -84,14 +79,19 @@ export class DatePickerComponent {
   }
 
   private highlightSelectedDay(): void {
-    const selectedCell = document.querySelector(`.mat-calendar-body-cell[data-day="${this.selectedDay}"]`);
+    const selectedCell = document.querySelector(
+      `.mat-calendar-body-cell[data-day="${this.selectedDay}"]`
+    );
     if (selectedCell) {
       selectedCell.classList.add('selected-cell');
     }
   }
 
   private setDisplayMonth(): void {
-    const options: Intl.DateTimeFormatOptions = { month: 'long', year: 'numeric' };
+    const options: Intl.DateTimeFormatOptions = {
+      month: 'long',
+      year: 'numeric',
+    };
     this.displayMonth = this.currentDate.toLocaleDateString('en-US', options);
   }
 }

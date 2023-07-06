@@ -5,25 +5,24 @@ import { map } from 'rxjs/operators';
 import { Therapist } from '../therapist.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TherapistService {
-
   private therapistsURL = 'http://localhost:3000/therapists';
-  
+
   constructor(private http: HttpClient) {}
 
   getTherapists(): Observable<Therapist[]> {
-    return this.http.get<any[]>(this.therapistsURL).pipe(
-      map(data => data.map(this.mapToTherapist))
-    );
+    return this.http
+      .get<any[]>(this.therapistsURL)
+      .pipe(map((data) => data.map(this.mapToTherapist)));
   }
 
   getTherapistById(id: string): Observable<Therapist | undefined> {
     const therapistURL = `${this.therapistsURL}/${id}`;
-    return this.http.get<any>(therapistURL).pipe(
-      map(data => this.mapToTherapist(data))
-    );
+    return this.http
+      .get<any>(therapistURL)
+      .pipe(map((data) => this.mapToTherapist(data)));
   }
 
   private mapToTherapist(data: any): Therapist {
@@ -38,7 +37,7 @@ export class TherapistService {
       pricePerSection: data.pricePerSection,
       minutesIncluded: data.minutesIncluded,
       description: data.description,
-      availableHours: data.availableHours
+      availableHours: data.availableHours,
     };
   }
 }

@@ -1,15 +1,13 @@
+import { AuthenticationService } from './../../../services/authentication.service';
 import { Component } from '@angular/core';
 
-
-import { AuthenticationService } from 'src/app/services/authentication.service';
 import { User } from 'src/app/user.model';
-import { v4 as uuidv4} from 'uuid';
-
+import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-navibar-login',
   templateUrl: './navibar-login.component.html',
-  styleUrls: ['./navibar-login.component.scss']
+  styleUrls: ['./navibar-login.component.scss'],
 })
 export class NavibarLoginComponent {
   email: string = '';
@@ -19,7 +17,7 @@ export class NavibarLoginComponent {
     id: uuidv4(),
     name: '',
     email: '',
-    password: ''
+    password: '',
   };
   confirmPassword: string = '';
   showSignInForm: boolean = false;
@@ -29,29 +27,29 @@ export class NavibarLoginComponent {
   modalOpen: boolean = true;
   isSignInButtonDisabled: boolean = true;
   isRegistered: boolean = false;
-  
+
   emailInvalid = false;
 
   constructor(public authenticationService: AuthenticationService) {}
 
   login() {
-    this.authenticationService.login(this.email, this.password).subscribe(result => {
-      if (result) {
-        this.loggedInUser = this.authenticationService.getLoggedInUser();
-        this.showMessage = true;
-      } else {
-        this.loggedInUser = '';
-      }
-    });
+    this.authenticationService
+      .login(this.email, this.password)
+      .subscribe((result) => {
+        if (result) {
+          this.loggedInUser = this.authenticationService.getLoggedInUser();
+          this.showMessage = true;
+        } else {
+          this.loggedInUser = '';
+        }
+      });
   }
 
   logout() {
     this.authenticationService.logout();
     this.loggedInUser = '';
-
   }
 
-  
   isSignInFormValid(): boolean {
     return (
       !!this.signInData.name &&
@@ -63,20 +61,21 @@ export class NavibarLoginComponent {
   }
 
   signIn() {
-    // Perform validation checks, such as password matching
     if (this.signInData.password !== this.confirmPassword) {
       console.log('Passwords do not match');
       return;
     }
 
-    // Make the sign-in API call using the authentication service
-    this.authenticationService.signup(this.signInData).subscribe(() => {
-      console.log('Sign-in successful!');
-      this.showSignInForm = false;
-      this.isRegistered = true;
-    }, error => {
-      console.error('Sign-in failed:', error);
-    });
+    this.authenticationService.signup(this.signInData).subscribe(
+      () => {
+        console.log('Sign-in successful!');
+        this.showSignInForm = false;
+        this.isRegistered = true;
+      },
+      (error) => {
+        console.error('Sign-in failed:', error);
+      }
+    );
   }
 
   cancelSignIn() {
@@ -90,9 +89,8 @@ export class NavibarLoginComponent {
     const target = event.target as HTMLElement;
     const isButton = target.tagName.toLowerCase() === 'button';
     const isInsideModal = target.closest('.modal-content') !== null;
-  
+
     if (!isButton || !isInsideModal) {
-      // Clicked outside the modal or not on a button, prevent the click event
       event.stopPropagation();
       event.preventDefault();
     }
@@ -103,4 +101,3 @@ export class NavibarLoginComponent {
     this.emailInvalid = !emailRegex.test(this.signInData.email);
   }
 }
-

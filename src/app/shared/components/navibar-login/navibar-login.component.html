@@ -1,5 +1,4 @@
 <nav class="navbar">
- 
   <div class="navbar-login">
     <ng-container *ngIf="authenticationService.isLoggedIn; else loginForm">
       <div class="welcome-message">
@@ -9,39 +8,98 @@
     </ng-container>
     <ng-template #loginForm>
       <form *ngIf="!showSignInForm" (ngSubmit)="login()">
-        <input type="email" placeholder="Email" name="email" [(ngModel)]="email" autocomplete="email">
-        <input type="password" placeholder="Password" name="password" [(ngModel)]="password" autocomplete="current-password">
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          [(ngModel)]="email"
+          autocomplete="email"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="password"
+          autocomplete="current-password"
+        />
         <button type="submit">Login</button>
-        <button type="button" (click)="showSignInForm = true" [disabled]="isRegistered">Sign Up</button>
+        <button
+          type="button"
+          (click)="showSignInForm = true"
+          [disabled]="isRegistered"
+        >
+          Sign Up
+        </button>
       </form>
     </ng-template>
   </div>
 </nav>
 
-<div class="modal-overlay" *ngIf="showSignInForm" (click)="handleModalClick($event)">
+<div
+  class="modal-overlay"
+  *ngIf="showSignInForm"
+  (click)="handleModalClick($event)"
+>
   <div class="modal-content">
     <form (ngSubmit)="signIn()">
-        <div class="form-group">
-          <label for="name">Name: </label>
-          <input type="text" id="name" placeholder="Name" name="name" [(ngModel)]="signInData.name" required>
+      <div class="form-group">
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Name"
+          name="name"
+          [(ngModel)]="signInData.name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email: </label>
+        <input
+          type="text"
+          id="email"
+          placeholder="Email"
+          name="email"
+          [(ngModel)]="signInData.email"
+          (ngModelChange)="validateEmail()"
+          required
+        />
+        <div *ngIf="emailInvalid" class="error-message">
+          Invalid email format
         </div>
-        <div class="form-group">
-          <label for="email">Email: </label>
-          <input type="text" id="email" placeholder="Email" name="email" [(ngModel)]="signInData.email" (ngModelChange)="validateEmail()" required>
-          <div *ngIf="emailInvalid" class="error-message">Invalid email format</div>
-        </div>
-        <div class="form-group">
-          <label for="password">Password: </label>
-          <input type="password" id="password" placeholder="Password" name="password" [(ngModel)]="signInData.password" required>
-        </div>
-        <div class="form-group">
-          <label for="confirmPassword">Confirm Password: </label>
-          <input type="password" id="confirmPassword" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="confirmPassword" required>
-        </div>
-        <div class="button-group">
-          <button [disabled]="!isSignInFormValid()" [ngClass]="{'disabled': !isSignInFormValid()}" type="submit">Sign Up</button>
-        <button type="button"(click)="cancelSignIn()">Cancel</button>
-        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          name="password"
+          [(ngModel)]="signInData.password"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password: </label>
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          name="confirmPassword"
+          [(ngModel)]="confirmPassword"
+          required
+        />
+      </div>
+      <div class="button-group">
+        <button
+          [disabled]="!isSignInFormValid()"
+          [ngClass]="{ disabled: !isSignInFormValid() }"
+          type="submit"
+        >
+          Sign Up
+        </button>
+        <button type="button" (click)="cancelSignIn()">Cancel</button>
+      </div>
     </form>
   </div>
 </div>

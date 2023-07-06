@@ -1,91 +1,90 @@
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    // background-color: #4EC6EA;
-    background-image: url('https://img.freepik.com/fotos-gratis/jovem-afro-americano-bonito-com-camiseta-caqui_176420-32042.jpg?w=1060&t=st=1688455516~exp=1688456116~hmac=1e3457882dc6cb28350e8559b11127ebbf7a3f68a66c4408d41c38509fb1f91c');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .title {
-    font-family: 'Libre Caslon Text', serif;
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  .therapist-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  
-  .therapist-list li {
-    margin-right: 60px;
-    cursor: pointer;
-  }
-  
-  .therapist-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #ccc;
-    overflow: hidden;
-    position: relative;
-    transition: 0.3s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: default;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-image: url('https://img.freepik.com/fotos-gratis/jovem-afro-americano-bonito-com-camiseta-caqui_176420-32042.jpg?w=1060&t=st=1688455516~exp=1688456116~hmac=1e3457882dc6cb28350e8559b11127ebbf7a3f68a66c4408d41c38509fb1f91c');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-  .clickable {
-    cursor: pointer;
-  }
-  
-  .circle-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-  }
-  
-  .therapist-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(0);
-    transition: 0.3s;
-    border-radius: 50%;
-  }
-  
-  .therapist-circle:hover .therapist-photo {
-    filter: blur(20px);
-  }
-  
-  .therapist-name {
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0;
-    transition: 0.3s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black;
-    width: 80%;
-  }
-  
-  .therapist-circle:hover .therapist-name {
-    opacity: 1;
-  }
+.title {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.therapist-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.therapist-list li {
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.therapist-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.circle-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.therapist-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(0);
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.therapist-circle:hover .therapist-photo {
+  filter: blur(20px);
+}
+
+.therapist-name {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  width: 80%;
+}
+
+.therapist-circle:hover .therapist-name {
+  opacity: 1;
+}

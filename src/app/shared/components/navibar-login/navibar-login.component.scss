@@ -33,7 +33,7 @@
 }
 
 .navbar-login button {
-  background-color: #4EC6EA;
+  background-color: #4ec6ea;
   color: white;
   border: none;
   border-radius: 10px;
@@ -46,7 +46,7 @@
 }
 
 .modal-overlay {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -79,8 +79,8 @@
 }
 
 .form-group {
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -163,6 +163,3 @@ button[disabled].sign-in-button {
 button[disabled].cancel-button {
   background-color: grey;
 }
-
-
-
