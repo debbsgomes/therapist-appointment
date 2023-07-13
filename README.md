@@ -72,6 +72,6 @@ Run `jest --coverage` to do tests using Jest. You can also use the command `npm 
 
 ## Conclusion
 
-Probably going to add a Shared Module in the future to control the flux of components and modules.
+Probably going to add a Shared Module in the future to control the flux of components and modules and apply E2E tests in a v2.
 
 
